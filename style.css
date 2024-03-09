@@ -11,6 +11,11 @@ header, footer {
     padding: 10px 0;
 }
 
+.picture img {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
 main {
     text-align: center;
     padding: 20px;

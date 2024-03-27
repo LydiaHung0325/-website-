@@ -2,31 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="chinese fortune-telling" content="i-ching, chinese fortune-telling, free fortune-telling">
+    <meta name="free chinese fortune-telling" content="i-ching, chinese fortune-telling, free fortune-telling">
     <title>Tarot Fortune Telling</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add CSS for centering content */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <h1>I-Ching Fortune Telling</h1>
-    </header>
+    <div class="container">
+        <header>
+            <h1>I-Ching Chinese Fortune Telling</h1>
+        </header>
 
-    <div class="picture">
-    <img src="images/capybara.jpg" alt="capybara fortune-teller">
+        <div class="picture">
+            <img src="images/capybara.jpg" alt="capybara fortune-teller">
+        </div>
+        
+        <p>
+        Think about your question and draw a card.
+        </p>
+
+        <main>
+            <button id="drawButton">Draw a Card</button>
+            <div id="cardDisplay"></div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2024 I-Ching fortune-telling</p>
+        </footer>
+        <script src="script.js"></script>
     </div>
-    
-    <p>
-    Think about your question and draw a card.
-    </p>
-
-    <main>
-        <button id="drawButton">Draw a Card</button>
-        <div id="cardDisplay"></div>
-    </main>
-    
-    <footer>
-        <p>&copy; 2024 I-Ching fortune-telling</p>
-    </footer>
-    <script src="script.js"></script>
 </body>
 </html>

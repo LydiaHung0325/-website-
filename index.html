@@ -7,28 +7,20 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5234847492030837"
         crossorigin="anonymous"></script>
     <title>Tarot Fortune Telling</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Add CSS for centering content */
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .container {
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header>
+        <h1>I-Ching Chinese Fortune Telling</h1>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="introduction.html">Introduction</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="container">
-        <header>
-            <h1>I-Ching Chinese Fortune Telling</h1>
-        </header>
 
         <div class="picture">
             <img src="images/capybara.jpg" alt="capybara fortune-teller">
@@ -39,15 +31,18 @@
         </p>
 
         <main>
-            <button id="drawButton">Draw a Card</button>
+            <button id="drawButton" class="button">Draw a Card</button>
             <div id="cardDisplay"></div>
         </main>
 
-        <footer>
-            <p>&copy; 2024 I-Ching fortune-telling</p>
-        </footer>
-        <script src="script.js"></script>
     </div>
+
+    <footer>
+        <p>&copy; 2024 I-Ching fortune-telling</p>
+    </footer>
+    <script src="script.js"></script>
+
+
 </body>
 
 </html>

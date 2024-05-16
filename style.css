@@ -3,32 +3,72 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
+    /* Added to stack header and footer */
     justify-content: center;
+    /* Center vertically */
     align-items: center;
+    /* Center horizontally */
     height: 100vh;
+}
+
+header,
+footer {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    /* Make header and footer full width */
 }
 
 .container {
     text-align: center;
-}
-
-header, footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+    margin: auto;
+    /* Center the container */
+    max-width: 600px;
+    /* Adjust as needed */
 }
 
 .picture img {
-    width: 50px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 250px;
+    height: auto;
 }
 
 main {
     padding: 20px;
 }
 
-button {
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+
+.main-nav li {
+    margin-left: 36px;
+}
+
+.main-nav ul {
+    padding-left: 0;
+}
+
+.main-nav a {
+    color: rgb(47, 34, 68);
+}
+
+.main-nav a:hover {
+    color: #0bd;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+.button {
     background-color: #4CAF50;
     color: white;
     padding: 15px 30px;
